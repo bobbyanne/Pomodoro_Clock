@@ -1,0 +1,369 @@
+body {
+    background-color: #B21212;
+    font-family: Russian;
+    font-size: 1.5em;
+    margin: 0;
+    color: #F9E092;
+}
+
+#loading-screen {
+    position: absolute;
+    background-color: #B30C0E;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    opacity: 1;
+}
+
+#loading-screen img {
+    max-width: 300px;
+    width: 80%;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 30%;
+}
+
+h1 {
+    position: relative;
+    margin: 0 0 0.5em 0;
+    text-align: center;
+    background-color: #5F5248;
+    font-family: Russian;
+    border-bottom: 5px solid #fff;
+    min-height: 75px;
+}
+
+#mobile-toggle {
+    display: none;
+    position: absolute;
+    left: 2%;
+    width: 44px;
+    height: 44px;
+    background-color: #999;
+    border-radius: 2px;
+    cursor: pointer;
+    z-index: 100;
+    border-top: 2px solid #CCC;
+    border-right: 2px solid #CCC;
+    border-bottom: 2px solid #666;
+    border-left: 2px solid #666;
+}
+
+#mobile-toggle:active {
+    background-color: #666;
+    border-top: 1px solid #444;
+    border-right: 1px solid #444;
+    border-bottom: 1px solid #AAA;
+    border-left: 1px solid #AAA;
+}
+
+#mobile-toggle img {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    display: block;
+    margin: auto;
+    top: 5px;
+}
+
+#mobile-menu {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: #888;
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+}
+
+#mobile-menu #toggle-up {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    height: 35px;
+}
+
+.mobile-btns-container {
+    top: 0;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mobile-btns-container:first-of-type {
+    left: 5%;
+}
+
+.mobile-btns-container:nth-of-type(2) {
+    right: 5%;
+}
+
+.mobile-btns-container img {
+    height: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 #header-text {
+    position: relative;
+    bottom: -3px;
+    padding: 4px 13px;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-top: 5px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1 img {
+    position: relative;
+    height: 100px;
+    display: inline-block;
+    margin: 0 1em;
+    bottom: -11px;
+}
+
+h1 img:nth-of-type(2) {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#clock {
+    position: relative;
+    padding-top: 130px;
+    color: #560909;
+    text-shadow: 1px 1px 1px rgba(180, 180, 180, .5);
+}
+
+#clock #hammer {
+    height: 130px;
+    z-index: 1;
+    position: absolute;
+}
+
+#clock .hammer-up {
+    left: 43%;
+    top: -20px;
+    transform: rotate(45deg);
+    transition-duration: 0.9s;
+}
+
+#clock .hammer-down {
+    left: 44%;
+    top: 28px;
+    transform: rotate(90deg);
+    transition-duration: 0.1s;
+}
+
+#clock #anvil {
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+    background-image: url(../Images/yellow_background.png);
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+    background-origin: border-box;
+}
+
+#time {
+    font-weight: bold;
+    font-size: 3em;
+    width: 300px;
+    display: block;
+    margin: 0.4em auto 0 auto;
+    text-align: center;
+}
+
+#current-session {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+}
+
+#current-session span {
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+#break-btns, #work-btns {
+    position: absolute;
+    top: 50px;
+}
+
+#break-btns, #work-btns {
+    border-bottom: 3px solid white;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+#break-btns img, #work-btns img {
+    height: 100px;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+}
+
+#break-time, #work-time {
+    font-size: 1.3em;
+    letter-spacing: 3px;
+}
+
+button {
+    margin: 0 12px;
+    font-size: 1em;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+#break-btns {
+    left: 10%;
+}
+
+#work-btns {
+    right: 10%;
+}
+
+#start-stop-buttons {
+    text-align: center;
+    display: block;
+    width: 260px;
+    margin: 1.5em auto 0 auto;
+    color: #fff;
+}
+
+#bear-image img {
+    margin: 0;
+    padding: 0;
+    height: 230px;
+    position: fixed;
+    right: 0%;
+    bottom: 0;
+}
+
+#plane {
+    height: 130px;
+    position: fixed;
+    bottom: 110px;
+    right: 100px;
+}
+
+@media (max-height: 620px) {
+    /*HEIGHT*/
+    #bear-image img {
+        display: none;
+    }
+    #plane {
+        display: none;
+    }
+}
+
+@media (max-width: 860px) {
+    h1 img {
+        height: 60px;
+        bottom: -14px;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    h1 #header-text {
+        bottom: -6px;
+    }
+    #clock #hammer {
+        height: 120px;
+    }
+    #clock .hammer-up {
+        left: 40%;
+        top: 3px;
+    }
+    #clock .hammer-down {
+        left: 42%;
+        top: 35px;
+    }
+    #clock #break-btns {
+        left: 5%;
+    }
+    #clock #work-btns {
+        right: 5%;
+    }
+    #clock #break-btns img, #clock #work-btns img {
+        height: 80px;
+    }
+    #current-session {
+        display: block;
+        margin: auto;
+        width: 400px;
+        position: initial;
+    }
+}
+
+@media (max-width: 700px) {
+    #mobile-toggle {
+        display: initial;
+        margin-top: 105px;
+    }
+    h1 img {
+        bottom: 0;
+        height: 40px;
+        display: block;
+        margin: auto;
+    }
+    h1 #header-text {
+        font-size: 0.8em;
+        bottom: 0;
+    }
+    h1 img:nth-of-type(2) {
+        display: none;
+    }
+    #mobile-menu {
+        display: initial;
+        opacity: 1;
+    }
+    #break-btns, #work-btns {
+        display: none;
+    }
+    #current-session {
+        display: none;
+    }
+    #clock .hammer-up {
+        left: 35%;
+    }
+    #clock .hammer-down {
+        left: 38%;
+    }
+    #bear-image {
+        display: none;
+    }
+    #plane {
+        display: none;
+    }
+    #time {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 400px) {
+    .mobile-btns-container {
+        position: initial;
+        pointer-events: none;
+    }
+    
+    .mobile-btns-container img {
+        height: 60px;
+    }
+}

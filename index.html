@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pomodoro Clock</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Styles/pomodoro.css">
+  <script src="Scripts/jquery-3.2.1.js"></script>
+  <script src="Scripts/pomodoro.js"></script>
+</head>
+
+<body>
+
+  <div id="loading-screen">
+    <img src="Images/test1.gif" alt="Loading...">
+  </div>
+
+  <div id="main">
+
+    <div id="mobile-toggle">
+      <img src="Images/settings.png" alt="SETTINGS">
+    </div>
+
+    <div id="mobile-menu">
+      <div id="break-mobile-btns" class="mobile-btns-container">
+        <img src="Images/break.png" alt="BREAK"><br>
+        <div class="button-container"><button>-</button><span id="mobile-break-time">5</span><button>+</button></div>
+      </div>
+
+      <div id="work-mobile-btns" class="mobile-btns-container">
+        <img src="Images/work.png" alt="LABOR"><br>
+        <div class="button-container"><button>-</button><span id="mobile-work-time">25</span><button>+</button></div>
+      </div>
+
+      <img id="toggle-up" src="Images/up-arrow.png" alt="Up Arrow">
+    </div>
+
+    <h1 role="header" id="header">
+      <img src="Images/worker2.png" alt="WORKER"><span id="header-text">Pomodoro Clock</span><img src="Images/worker2.png"
+        alt="WORKER">
+    </h1>
+
+    <div id="clock-wrapper">
+      <div id="clock">
+
+        <div id="break-btns">
+          <img src="Images/break.png" alt="BREAK"><br>
+          <div class="button-container"><button>-</button><span id="break-time">5</span><button>+</button></div>
+        </div>
+
+        <img id="hammer" class="hammer-down" src="Images/hammer2.png" alt="hammer">
+        <img id="anvil" src="Images/anvil3.png" alt="anvil">
+
+        <div id="work-btns">
+          <img src="Images/work.png" alt="LABOR"><br>
+          <div class="button-container"><button>-</button><span id="work-time">25</span><button>+</button></div>
+        </div>
+
+        <div id="start-stop-buttons">
+          <button id="start">Start</button><button id="stop">Stop</button><button id="reset">Reset</button>
+        </div>
+
+        <div id="time">
+          25
+        </div>
+
+        <div id="current-session">
+          <span>-CURREnt SEssion-</span>
+          <span id="session">Work</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img id="plane" src="Images/planes.png" alt="PLANE">
+  <div id="bear-image">
+    <img src="Images/bear.png" alt="BEAR">
+  </div>
+</body>
+
+</html>
