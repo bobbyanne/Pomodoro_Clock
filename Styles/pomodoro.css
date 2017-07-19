@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "Freakshow";
+    font-family: "Russian";
     src: url("../Fonts/Freakshow.ttf") format("truetype");
 }
 
 body {
     background-color: #B21212;
-    font-family: Freakshow;
+    font-family: Russian;
     font-size: 1.5em;
     margin: 0;
     color: #F9E092;
@@ -36,7 +36,6 @@ h1 {
     background-color: #5F5248;
     font-family: Russian;
     border-bottom: 5px solid #fff;
-    min-height: 75px;
 }
 
 #mobile-toggle {
@@ -281,13 +280,13 @@ button {
 @media (max-width: 860px) {
     h1 img {
         height: 60px;
-        bottom: -14px;
+        bottom: -8px;
     }
     h1 {
         font-size: 1.4em;
     }
     h1 #header-text {
-        bottom: -6px;
+        bottom: 0px;
     }
     #clock #hammer {
         height: 120px;
@@ -323,18 +322,19 @@ button {
         margin-top: 105px;
     }
     h1 img {
-        bottom: 0;
+        bottom: -20px;
         height: 40px;
-        display: block;
         margin: auto;
+    }
+    
+    h1 {
+        height: 60px;
     }
     h1 #header-text {
         font-size: 0.8em;
-        bottom: 0;
+        bottom: -12px;
     }
-    h1 img:nth-of-type(2) {
-        display: none;
-    }
+    
     #mobile-menu {
         display: initial;
         opacity: 1;
@@ -366,9 +366,27 @@ button {
     .mobile-btns-container {
         position: initial;
         pointer-events: none;
+        margin-bottom: 15px;
     }
     
     .mobile-btns-container img {
-        height: 60px;
+        height: 80px;
+    }
+    
+    h1 {
+        height: 90px;
+    }
+    
+    h1 #header-text {
+        bottom: -3px;
+    }
+    
+    h1 img {
+        display: block;
+        bottom: -3px;
+    }
+    
+    h1 img:nth-of-type(2) {
+        display: none;
     }
 }
