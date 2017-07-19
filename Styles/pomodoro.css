@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Freakshow";
+    src: url("../Fonts/Freakshow.ttf") format("truetype");
+}
+
 body {
     background-color: #B21212;
     font-family: Russian;
